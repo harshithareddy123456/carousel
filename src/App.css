@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.leftbutton{
+  position: absolute;
+  left: 468px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rightbutton{
+  position: absolute;
+  right: 468px;
+   border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mainimage img {
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.mainimage img.active {
+  opacity: 1; /* Transition to opacity 1 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+
